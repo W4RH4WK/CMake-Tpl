@@ -12,6 +12,8 @@ include(dependencies/boost)
 include(dependencies/googletest)
 include(dependencies/googlebenchmark)
 
+include(doxygen)
+
 add_library(example src/dice.cpp)
 target_include_directories(example PUBLIC include)
 

@@ -4,6 +4,7 @@
 
 ## Features
 
+- [Doxygen](http://www.doxygen.org/) integration
 - [Google Test](https://github.com/google/googletest) integration
 - [Google Benchmark](https://github.com/google/benchmark) integration
 - [DIFAS](https://github.com/W4RH4WK/DIFAS) integration
