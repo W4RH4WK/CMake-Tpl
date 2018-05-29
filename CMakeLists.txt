@@ -12,6 +12,8 @@ include(dependencies/boost)
 include(dependencies/googletest)
 include(dependencies/googlebenchmark)
 
+include(project_defaults)
+
 include(coverage)
 include(doxygen)
 include(profiling)
