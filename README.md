@@ -4,6 +4,7 @@
 
 ## Features
 
+- Basic profiling support
 - Coverage
 - [Doxygen](http://www.doxygen.org/) integration
 - [Google Test](https://github.com/google/googletest) integration

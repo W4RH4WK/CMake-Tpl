@@ -14,6 +14,7 @@ include(dependencies/googlebenchmark)
 
 include(coverage)
 include(doxygen)
+include(profiling)
 
 add_library(example src/dice.cpp)
 target_include_directories(example PUBLIC include)
