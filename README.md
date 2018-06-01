@@ -11,6 +11,14 @@
 - [Google Benchmark](https://github.com/google/benchmark) integration
 - [DIFAS](https://github.com/W4RH4WK/DIFAS) integration
 
+## Demo
+
+    $ mkdir build; cd build
+    $ cmake -GNinja ..
+    $ ninja
+    $ ninja test
+    $ ../scripts/run_benchmarks
+
 ## Known Issues
 
 - Google Test 1.8 CMake Policy CMP0048 warning
