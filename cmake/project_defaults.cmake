@@ -16,6 +16,8 @@ endif()
 
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_BINARY_DIR})
 
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+
 if(ENABLE_TESTING)
     enable_testing()
 endif()
