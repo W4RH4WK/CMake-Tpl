@@ -1,0 +1,10 @@
+#!/bin/bash
+
+set -eu
+
+find \
+    -maxdepth 1 \
+    -name 'bm_*' \
+    -type f \
+    -executable \
+    -exec {} --benchmark_out={}.json --benchmark_out_format=json \;
