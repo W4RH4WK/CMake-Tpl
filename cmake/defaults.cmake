@@ -1,4 +1,5 @@
 option(AUTO_DOWNLOAD "Automatically download build dependencies" OFF)
+option(ENABLE_EXECUTABLES "Enable executables" ON)
 option(ENABLE_TESTING "Enable tests" ON)
 option(ENABLE_BENCHMARKING "Enable benchmarks" ON)
 

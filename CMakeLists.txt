@@ -22,8 +22,14 @@ include(utilities)
 add_library(example src/dice.cpp)
 target_include_directories(example PUBLIC include)
 
-add_executable(dice_roller src/bin/dice_roller.cpp)
-target_link_libraries(dice_roller example)
+if(ENABLE_EXECUTABLES)
+    set(executables dice_roller)
+
+    foreach(executable IN LISTS executables)
+        add_executable(${executable} src/bin/${executable}.cpp)
+        target_link_libraries(${executable} example)
+    endforeach()
+endif()
 
 if(ENABLE_TESTING)
     set(tests dice)
