@@ -27,7 +27,7 @@ if(ENABLE_EXECUTABLES)
 endif()
 
 if(ENABLE_TESTING)
-    add_subdirectory(test/units)
+    add_subdirectory(test/unit)
 endif()
 
 if(ENABLE_BENCHMARKING)
