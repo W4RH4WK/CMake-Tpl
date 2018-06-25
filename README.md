@@ -18,12 +18,3 @@
     $ ninja
     $ ninja test
     $ ../scripts/run_benchmarks
-
-## Known Issues
-
-- Google Test 1.8 CMake Policy CMP0048 warning
-- Google Test 1.8 cannot be prevented from being installed
-
-## Acknowledgement
-
-- [DownloadProject](https://github.com/Crascit/DownloadProject)
