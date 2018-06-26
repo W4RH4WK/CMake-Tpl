@@ -8,4 +8,4 @@ int roll_dice();
 
 } // end namespace example
 
-#endif
+#endif // EXAMPLE_DICE_HPP

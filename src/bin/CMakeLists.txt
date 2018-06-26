@@ -1,4 +1,4 @@
-set(executables dice_roller)
+set(executables dice_roller resource_accessor)
 
 foreach(executable IN LISTS executables)
     add_executable(${executable} ${executable}.cpp)

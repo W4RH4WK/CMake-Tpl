@@ -18,16 +18,9 @@ include(profiling)
 
 include(utilities)
 
-#include(dependencies/boost)
+include(dependencies/boost)
 
-add_library(example src/dice.cpp)
-target_include_directories(example PUBLIC include)
-
-install(DIRECTORY include/ DESTINATION include)
-install(TARGETS example
-    LIBRARY DESTINATION lib
-    ARCHIVE DESTINATION lib
-)
+add_subdirectory(src)
 
 if(ENABLE_EXECUTABLES)
     add_subdirectory(src/bin)
@@ -40,3 +33,6 @@ endif()
 if(ENABLE_BENCHMARKING)
     add_subdirectory(test/benchmarks)
 endif(ENABLE_BENCHMARKING)
+
+# Install Resources
+install(DIRECTORY resources/ DESTINATION share/${PROJECT_NAME})
