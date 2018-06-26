@@ -2,8 +2,7 @@
 
 #include <boost/random.hpp>
 
-namespace example
-{
+namespace example {
 
 int roll_dice()
 {

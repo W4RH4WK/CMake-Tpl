@@ -1,8 +1,7 @@
 #ifndef EXAMPLE_DICE_HPP
 #define EXAMPLE_DICE_HPP
 
-namespace example
-{
+namespace example {
 
 int roll_dice();
 

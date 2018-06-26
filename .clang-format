@@ -4,11 +4,9 @@ ColumnLimit: 80
 IndentWidth: 4
 TabWidth: 4
 UseTab: ForIndentation
-BreakBeforeBraces: Linux
 AlignEscapedNewlines: DontAlign
 AllowShortFunctionsOnASingleLine: Empty
-AllowShortIfStatementsOnASingleLine: false
-IndentCaseLabels: false
-AllowShortCaseLabelsOnASingleLine: true
-Cpp11BracedListStyle: false
+BreakBeforeBraces: Custom
+BraceWrapping:
+  AfterFunction: true
 ...

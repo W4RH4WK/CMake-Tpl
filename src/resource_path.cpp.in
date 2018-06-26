@@ -6,12 +6,25 @@ extern "C" {
 #include <unistd.h>
 }
 
-namespace
-{
+enum class foo {
+	bar,
+	baz,
+};
+
+class Foo {
+	int a;
+};
+
+struct Bar {
+  public:
+	int b;
+};
+
+namespace {
 
 const char MARKER_FILE[] = "CMakeCache.txt";
 
-bool exe_in_build_dir(void)
+bool exe_in_build_dir()
 {
 	char exe_path[PATH_MAX + 1];
 	ssize_t n = readlink("/proc/self/exe", exe_path, PATH_MAX);
@@ -28,8 +41,7 @@ bool exe_in_build_dir(void)
 
 } // end namespace
 
-namespace example
-{
+namespace example {
 
 std::string resource_path()
 {

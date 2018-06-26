@@ -3,8 +3,7 @@
 
 #include <string>
 
-namespace example
-{
+namespace example {
 
 std::string resource_path();
 
