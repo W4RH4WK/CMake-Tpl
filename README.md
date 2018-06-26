@@ -1,6 +1,6 @@
 # CMake Template
 
-- Use `-DAUTO_DOWNLOAD=ON` to automatically download build dependencies.
+See [`cmake/options.cmake`](cmake/options.cmake).
 
 ## Features
 
@@ -15,7 +15,7 @@
 ## Demo
 
     $ mkdir build; cd build
-    $ cmake -GNinja ..
+    $ cmake -GNinja -DAUTO_DOWNLOAD=ON ..
     $ ninja
     $ ninja test
     $ ../scripts/run_benchmarks

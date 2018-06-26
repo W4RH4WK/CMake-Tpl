@@ -1,5 +1,3 @@
-option(ENABLE_COVERAGE "Compile with coverage support" OFF)
-
 if(ENABLE_COVERAGE)
     find_program(LCOV lcov)
     find_program(GENHTML genhtml)

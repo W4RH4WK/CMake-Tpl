@@ -1,5 +1,3 @@
-option(ENABLE_PROFILING "Compile with profiling support" OFF)
-
 if(ENABLE_PROFILING)
     if(BUILD_SHARED_LIBS)
         message(WARNING "Profiling may not work when building shared libraries!")

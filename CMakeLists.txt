@@ -3,21 +3,22 @@ project(example VERSION 1.0 LANGUAGES CXX)
 
 set(CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/cmake ${CMAKE_MODULE_PATH})
 
+include(options)
+
 include(defaults)
 
 #include(DIFAS)
 
-include(dependencies/threads)
-include(dependencies/boost)
-include(dependencies/googletest)
-include(dependencies/googlebenchmark)
+include(testing)
+include(benchmarking)
 
-include(project_defaults)
-
-include(coverage)
 include(doxygen)
+include(coverage)
 include(profiling)
+
 include(utilities)
+
+#include(dependencies/boost)
 
 add_library(example src/dice.cpp)
 target_include_directories(example PUBLIC include)

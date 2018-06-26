@@ -1,4 +1,6 @@
-if(ENABLE_TESTING)
+if(NOT TARGET GTest)
+    include(dependencies/threads)
+
     include(ExternalProject)
 
     if(EXISTS ${PROJECT_SOURCE_DIR}/vendor/googletest.zip)

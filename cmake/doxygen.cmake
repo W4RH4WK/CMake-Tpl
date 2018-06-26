@@ -1,5 +1,3 @@
-option(ENABLE_DOXYGEN "Add target to build doxygen output" ON)
-
 if(ENABLE_DOXYGEN)
     find_package(Doxygen)
 

@@ -1,4 +1,6 @@
-if(ENABLE_BENCHMARKING)
+if(NOT TARGET GBenchmark)
+    include(dependencies/threads)
+
     include(ExternalProject)
 
     if(EXISTS ${PROJECT_SOURCE_DIR}/vendor/googlebenchmark.zip)
