@@ -4,6 +4,7 @@
 
 ## Features
 
+- Install target
 - Basic profiling support
 - Coverage
 - [Doxygen](http://www.doxygen.org/) integration

@@ -22,6 +22,12 @@ include(utilities)
 add_library(example src/dice.cpp)
 target_include_directories(example PUBLIC include)
 
+install(DIRECTORY include/ DESTINATION include)
+install(TARGETS example
+    LIBRARY DESTINATION lib
+    ARCHIVE DESTINATION lib
+)
+
 if(ENABLE_EXECUTABLES)
     add_subdirectory(src/bin)
 endif()
