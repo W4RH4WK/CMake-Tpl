@@ -6,21 +6,9 @@ extern "C" {
 #include <unistd.h>
 }
 
-enum class foo {
-	bar,
-	baz,
-};
-
-class Foo {
-	int a;
-};
-
-struct Bar {
-  public:
-	int b;
-};
-
 namespace {
+
+#include "resource_path.def"
 
 const char MARKER_FILE[] = "CMakeCache.txt";
 
@@ -49,9 +37,9 @@ std::string resource_path()
 
 	if (!path) {
 		if (exe_in_build_dir()) {
-			path = "@PROJECT_SOURCE_DIR@/resources";
+			path = SOURCE_RESOURCE_DIR;
 		} else {
-			path = "@CMAKE_INSTALL_PREFIX@/share/@PROJECT_NAME@";
+			path = INSTALL_RESOURCE_DIR;
 		}
 	}
 
