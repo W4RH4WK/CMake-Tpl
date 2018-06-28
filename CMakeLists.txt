@@ -34,5 +34,6 @@ if(ENABLE_BENCHMARKING)
     add_subdirectory(test/benchmarks)
 endif(ENABLE_BENCHMARKING)
 
-# Install Resources
 install(DIRECTORY resources/ DESTINATION share/${PROJECT_NAME})
+
+include(packaging)

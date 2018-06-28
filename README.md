@@ -5,6 +5,7 @@ See [`cmake/options.cmake`](cmake/options.cmake).
 ## Features
 
 - Install target
+- Packaging target
 - Basic profiling support
 - Coverage
 - [Doxygen](http://www.doxygen.org/) integration
@@ -19,3 +20,4 @@ See [`cmake/options.cmake`](cmake/options.cmake).
     $ ninja
     $ ninja test
     $ ../scripts/run_benchmarks
+    $ ninja package
