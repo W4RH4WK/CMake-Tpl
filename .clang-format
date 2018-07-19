@@ -6,6 +6,7 @@ TabWidth: 4
 UseTab: ForIndentation
 AlignEscapedNewlines: DontAlign
 AllowShortFunctionsOnASingleLine: Empty
+AlwaysBreakTemplateDeclarations: true
 BreakBeforeBraces: Custom
 BraceWrapping:
   AfterFunction: true
